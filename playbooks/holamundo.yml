@@ -1,0 +1,12 @@
+- hosts: all
+  become: True
+  tasks:
+    - name: Hola mundo !!!
+      debug:
+        msg: Hola mundo , silvia en curso
+        
+    - name: Crear usuario
+      user:
+        name: silvia
+        state: present
+        
