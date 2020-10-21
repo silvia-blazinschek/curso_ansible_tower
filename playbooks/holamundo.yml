@@ -1,10 +1,10 @@
 - hosts: all
-  gather_facts: no
+  gather_facts: yes
   become: True
   tasks:
     - name: Hola mundo !!!
       debug:
-         msg: Hola mundo
+        msg: Hola mundo
       
     - name: Crear usuario
       user:
