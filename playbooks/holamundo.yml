@@ -26,7 +26,7 @@
         
     - name: Adios Mundo
       debug: 
-        msg: "Adios {{ persona }}""
+        msg: "Adios {{ ansible_facts.distribution }}""
       tags:
         - saludo
         - despedida
@@ -38,6 +38,7 @@
       debug: 
         msg: Soy el handler 1
       listen: usuariocreado
+      
     - name: handler2
       debug: 
         msg: soy el handler 2
