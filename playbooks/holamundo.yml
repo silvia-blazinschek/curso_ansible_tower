@@ -1,6 +1,8 @@
 - hosts: all
   gather_facts: yes
   become: True
+  vars: 
+    var1 = "hola"
   tasks:
     - name: Hola mundo !!!
       debug:
@@ -25,10 +27,12 @@
         
     - name: Adios Mundo
       debug: 
-        msg: Adios Mundo
+        msg: "Adios {{ persona }}""
       tags:
         - saludo
         - despedida
+      vars:
+        persona: silvia
         
   handlers:
     - name: handler1
