@@ -17,6 +17,7 @@
         name: silvia
         state: present
       notify: usuariocreado
+      changed_when: False
         
     - name: Caracteristicas de la maquina
       debug: 
