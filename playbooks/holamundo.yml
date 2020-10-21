@@ -2,7 +2,7 @@
   gather_facts: yes
   become: True
   vars: 
-    var1 = "hola"
+    var1: "hola"
   tasks:
     - name: Hola mundo !!!
       debug:
