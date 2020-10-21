@@ -38,7 +38,7 @@
     - name: handler1
       debug: 
         msg: Soy el handler 1
-      listen: usuariocreado
+      
     - name: handler2
       debug: 
         msg: soy el handler 2
