@@ -13,7 +13,7 @@
         
     - name: Caracteristicas de la maquina
       debug: 
-        msg: "{{ snsible_facts.distribution }}"
+        msg: "{{ ansible_facts.distribution }}"
         
     - name: Adios Mundo
       debug: 
