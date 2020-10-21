@@ -1,12 +1,21 @@
 - hosts: all
+  gather_facts: no
   become: True
   tasks:
     - name: Hola mundo !!!
       debug:
-        msg: Hola mundo , silvia en curso
-        
+         msg: Hola mundo
+      
     - name: Crear usuario
       user:
         name: silvia
         state: present
+        
+    - name: Caracteristicas de la maquina
+      debug: 
+        msg: "{{ snsible_facts.distribution }}"
+        
+    - name: Adios Mundo
+      debug: 
+        msg: Adios Mundo
         
