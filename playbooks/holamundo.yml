@@ -5,6 +5,9 @@
     - name: Hola mundo !!!
       debug:
         msg: Hola mundo
+      tags: 
+        - saludo
+        - bienvenida
       
     - name: Crear usuario
       user:
@@ -18,4 +21,6 @@
     - name: Adios Mundo
       debug: 
         msg: Adios Mundo
-        
+      tags:
+        - saludo
+        -despedida
