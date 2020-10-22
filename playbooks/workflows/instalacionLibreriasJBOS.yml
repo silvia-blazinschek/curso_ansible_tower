@@ -2,4 +2,5 @@
 
   tasks: 
     debug:
-      msg: Soy la tarea de Instalacion de librerias de RH
+      msg: Soy la tarea de Instalacion de librerias de JBOS
+      
